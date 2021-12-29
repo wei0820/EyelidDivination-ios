@@ -1,0 +1,762 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04EED9E9277C08A000C312DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EED9E8277C08A000C312DB /* AppDelegate.swift */; };
+		04EED9ED277C08A000C312DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EED9EC277C08A000C312DB /* ViewController.swift */; };
+		04EED9F0277C08A000C312DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04EED9EE277C08A000C312DB /* Main.storyboard */; };
+		04EED9F2277C08A300C312DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04EED9F1277C08A300C312DB /* Assets.xcassets */; };
+		04EED9F5277C08A400C312DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04EED9F3277C08A400C312DB /* LaunchScreen.storyboard */; };
+		04EEDA00277C08A400C312DB /* EyelidDivination_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EED9FF277C08A400C312DB /* EyelidDivination_iosTests.swift */; };
+		04EEDA0A277C08A400C312DB /* EyelidDivination_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EEDA09277C08A400C312DB /* EyelidDivination_iosUITests.swift */; };
+		04EEDA0C277C08A400C312DB /* EyelidDivination_iosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EEDA0B277C08A400C312DB /* EyelidDivination_iosUITestsLaunchTests.swift */; };
+		04EEDA19277C0AC400C312DB /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 04EEDA18277C0AC400C312DB /* .gitignore */; };
+		9DD41B247610973874372386 /* Pods_EyelidDivination_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AAC54E21DDE2A7F55022B75 /* Pods_EyelidDivination_ios.framework */; };
+		DF974CA69D1465D18913C51A /* Pods_EyelidDivination_ios_EyelidDivination_iosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 263C69982D88600E5211DE53 /* Pods_EyelidDivination_ios_EyelidDivination_iosUITests.framework */; };
+		F0D3A70035A82A115A8A1354 /* Pods_EyelidDivination_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B7947E376849BFD3D9F2200 /* Pods_EyelidDivination_iosTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		04EED9FC277C08A400C312DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04EED9DD277C08A000C312DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04EED9E4277C08A000C312DB;
+			remoteInfo = "EyelidDivination-ios";
+		};
+		04EEDA06277C08A400C312DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04EED9DD277C08A000C312DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04EED9E4277C08A000C312DB;
+			remoteInfo = "EyelidDivination-ios";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04EED9E5277C08A000C312DB /* EyelidDivination-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EyelidDivination-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		04EED9E8277C08A000C312DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		04EED9EC277C08A000C312DB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		04EED9EF277C08A000C312DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		04EED9F1277C08A300C312DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04EED9F4277C08A400C312DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		04EED9F6277C08A400C312DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04EED9FB277C08A400C312DB /* EyelidDivination-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "EyelidDivination-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		04EED9FF277C08A400C312DB /* EyelidDivination_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EyelidDivination_iosTests.swift; sourceTree = "<group>"; };
+		04EEDA05277C08A400C312DB /* EyelidDivination-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "EyelidDivination-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		04EEDA09277C08A400C312DB /* EyelidDivination_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EyelidDivination_iosUITests.swift; sourceTree = "<group>"; };
+		04EEDA0B277C08A400C312DB /* EyelidDivination_iosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EyelidDivination_iosUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		04EEDA18277C0AC400C312DB /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		263C69982D88600E5211DE53 /* Pods_EyelidDivination_ios_EyelidDivination_iosUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EyelidDivination_ios_EyelidDivination_iosUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AF1A4D1B3D5C4D41956DD65 /* Pods-EyelidDivination-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EyelidDivination-ios.release.xcconfig"; path = "Target Support Files/Pods-EyelidDivination-ios/Pods-EyelidDivination-ios.release.xcconfig"; sourceTree = "<group>"; };
+		46D1DBE9E7F20EA856637401 /* Pods-EyelidDivination-ios-EyelidDivination-iosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EyelidDivination-ios-EyelidDivination-iosUITests.debug.xcconfig"; path = "Target Support Files/Pods-EyelidDivination-ios-EyelidDivination-iosUITests/Pods-EyelidDivination-ios-EyelidDivination-iosUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		63159A68A0F73BC00198AA08 /* Pods-EyelidDivination-iosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EyelidDivination-iosTests.debug.xcconfig"; path = "Target Support Files/Pods-EyelidDivination-iosTests/Pods-EyelidDivination-iosTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7B7947E376849BFD3D9F2200 /* Pods_EyelidDivination_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EyelidDivination_iosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		86BED91F712D271E0A82DB53 /* Pods-EyelidDivination-ios-EyelidDivination-iosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EyelidDivination-ios-EyelidDivination-iosUITests.release.xcconfig"; path = "Target Support Files/Pods-EyelidDivination-ios-EyelidDivination-iosUITests/Pods-EyelidDivination-ios-EyelidDivination-iosUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8AAC54E21DDE2A7F55022B75 /* Pods_EyelidDivination_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EyelidDivination_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A915D1B4621E2A20710F4D9A /* Pods-EyelidDivination-iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EyelidDivination-iosTests.release.xcconfig"; path = "Target Support Files/Pods-EyelidDivination-iosTests/Pods-EyelidDivination-iosTests.release.xcconfig"; sourceTree = "<group>"; };
+		D1E1B53BAA88383CF54FD3BA /* Pods-EyelidDivination-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EyelidDivination-ios.debug.xcconfig"; path = "Target Support Files/Pods-EyelidDivination-ios/Pods-EyelidDivination-ios.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04EED9E2277C08A000C312DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DD41B247610973874372386 /* Pods_EyelidDivination_ios.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04EED9F8277C08A400C312DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0D3A70035A82A115A8A1354 /* Pods_EyelidDivination_iosTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04EEDA02277C08A400C312DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF974CA69D1465D18913C51A /* Pods_EyelidDivination_ios_EyelidDivination_iosUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04EED9DC277C08A000C312DB = {
+			isa = PBXGroup;
+			children = (
+				04EEDA18277C0AC400C312DB /* .gitignore */,
+				04EED9E7277C08A000C312DB /* EyelidDivination-ios */,
+				04EED9FE277C08A400C312DB /* EyelidDivination-iosTests */,
+				04EEDA08277C08A400C312DB /* EyelidDivination-iosUITests */,
+				04EED9E6277C08A000C312DB /* Products */,
+				C4489CC9B5C0B9F70D53668B /* Pods */,
+				DBE73AA1B36D07F2A9E64CFF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		04EED9E6277C08A000C312DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04EED9E5277C08A000C312DB /* EyelidDivination-ios.app */,
+				04EED9FB277C08A400C312DB /* EyelidDivination-iosTests.xctest */,
+				04EEDA05277C08A400C312DB /* EyelidDivination-iosUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04EED9E7277C08A000C312DB /* EyelidDivination-ios */ = {
+			isa = PBXGroup;
+			children = (
+				04EED9E8277C08A000C312DB /* AppDelegate.swift */,
+				04EED9EC277C08A000C312DB /* ViewController.swift */,
+				04EED9EE277C08A000C312DB /* Main.storyboard */,
+				04EED9F1277C08A300C312DB /* Assets.xcassets */,
+				04EED9F3277C08A400C312DB /* LaunchScreen.storyboard */,
+				04EED9F6277C08A400C312DB /* Info.plist */,
+			);
+			path = "EyelidDivination-ios";
+			sourceTree = "<group>";
+		};
+		04EED9FE277C08A400C312DB /* EyelidDivination-iosTests */ = {
+			isa = PBXGroup;
+			children = (
+				04EED9FF277C08A400C312DB /* EyelidDivination_iosTests.swift */,
+			);
+			path = "EyelidDivination-iosTests";
+			sourceTree = "<group>";
+		};
+		04EEDA08277C08A400C312DB /* EyelidDivination-iosUITests */ = {
+			isa = PBXGroup;
+			children = (
+				04EEDA09277C08A400C312DB /* EyelidDivination_iosUITests.swift */,
+				04EEDA0B277C08A400C312DB /* EyelidDivination_iosUITestsLaunchTests.swift */,
+			);
+			path = "EyelidDivination-iosUITests";
+			sourceTree = "<group>";
+		};
+		C4489CC9B5C0B9F70D53668B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D1E1B53BAA88383CF54FD3BA /* Pods-EyelidDivination-ios.debug.xcconfig */,
+				3AF1A4D1B3D5C4D41956DD65 /* Pods-EyelidDivination-ios.release.xcconfig */,
+				46D1DBE9E7F20EA856637401 /* Pods-EyelidDivination-ios-EyelidDivination-iosUITests.debug.xcconfig */,
+				86BED91F712D271E0A82DB53 /* Pods-EyelidDivination-ios-EyelidDivination-iosUITests.release.xcconfig */,
+				63159A68A0F73BC00198AA08 /* Pods-EyelidDivination-iosTests.debug.xcconfig */,
+				A915D1B4621E2A20710F4D9A /* Pods-EyelidDivination-iosTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DBE73AA1B36D07F2A9E64CFF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8AAC54E21DDE2A7F55022B75 /* Pods_EyelidDivination_ios.framework */,
+				263C69982D88600E5211DE53 /* Pods_EyelidDivination_ios_EyelidDivination_iosUITests.framework */,
+				7B7947E376849BFD3D9F2200 /* Pods_EyelidDivination_iosTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04EED9E4277C08A000C312DB /* EyelidDivination-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04EEDA0F277C08A400C312DB /* Build configuration list for PBXNativeTarget "EyelidDivination-ios" */;
+			buildPhases = (
+				94AE739EA95C1A8E27BA824D /* [CP] Check Pods Manifest.lock */,
+				04EED9E1277C08A000C312DB /* Sources */,
+				04EED9E2277C08A000C312DB /* Frameworks */,
+				04EED9E3277C08A000C312DB /* Resources */,
+				1AFA3E2159F1542F7D50AF92 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "EyelidDivination-ios";
+			productName = "EyelidDivination-ios";
+			productReference = 04EED9E5277C08A000C312DB /* EyelidDivination-ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+		04EED9FA277C08A400C312DB /* EyelidDivination-iosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04EEDA12277C08A400C312DB /* Build configuration list for PBXNativeTarget "EyelidDivination-iosTests" */;
+			buildPhases = (
+				224B2B445112CDFD7A3647E2 /* [CP] Check Pods Manifest.lock */,
+				04EED9F7277C08A400C312DB /* Sources */,
+				04EED9F8277C08A400C312DB /* Frameworks */,
+				04EED9F9277C08A400C312DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04EED9FD277C08A400C312DB /* PBXTargetDependency */,
+			);
+			name = "EyelidDivination-iosTests";
+			productName = "EyelidDivination-iosTests";
+			productReference = 04EED9FB277C08A400C312DB /* EyelidDivination-iosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		04EEDA04277C08A400C312DB /* EyelidDivination-iosUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04EEDA15277C08A400C312DB /* Build configuration list for PBXNativeTarget "EyelidDivination-iosUITests" */;
+			buildPhases = (
+				293FF8BCF526D3274B58C7B5 /* [CP] Check Pods Manifest.lock */,
+				04EEDA01277C08A400C312DB /* Sources */,
+				04EEDA02277C08A400C312DB /* Frameworks */,
+				04EEDA03277C08A400C312DB /* Resources */,
+				8A9CB73CB8A0CE7764DC147C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04EEDA07277C08A400C312DB /* PBXTargetDependency */,
+			);
+			name = "EyelidDivination-iosUITests";
+			productName = "EyelidDivination-iosUITests";
+			productReference = 04EEDA05277C08A400C312DB /* EyelidDivination-iosUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04EED9DD277C08A000C312DB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					04EED9E4277C08A000C312DB = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					04EED9FA277C08A400C312DB = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 04EED9E4277C08A000C312DB;
+					};
+					04EEDA04277C08A400C312DB = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 04EED9E4277C08A000C312DB;
+					};
+				};
+			};
+			buildConfigurationList = 04EED9E0277C08A000C312DB /* Build configuration list for PBXProject "EyelidDivination-ios" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04EED9DC277C08A000C312DB;
+			productRefGroup = 04EED9E6277C08A000C312DB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04EED9E4277C08A000C312DB /* EyelidDivination-ios */,
+				04EED9FA277C08A400C312DB /* EyelidDivination-iosTests */,
+				04EEDA04277C08A400C312DB /* EyelidDivination-iosUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04EED9E3277C08A000C312DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04EEDA19277C0AC400C312DB /* .gitignore in Resources */,
+				04EED9F5277C08A400C312DB /* LaunchScreen.storyboard in Resources */,
+				04EED9F2277C08A300C312DB /* Assets.xcassets in Resources */,
+				04EED9F0277C08A000C312DB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04EED9F9277C08A400C312DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04EEDA03277C08A400C312DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1AFA3E2159F1542F7D50AF92 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EyelidDivination-ios/Pods-EyelidDivination-ios-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EyelidDivination-ios/Pods-EyelidDivination-ios-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EyelidDivination-ios/Pods-EyelidDivination-ios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		224B2B445112CDFD7A3647E2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EyelidDivination-iosTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		293FF8BCF526D3274B58C7B5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EyelidDivination-ios-EyelidDivination-iosUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8A9CB73CB8A0CE7764DC147C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EyelidDivination-ios-EyelidDivination-iosUITests/Pods-EyelidDivination-ios-EyelidDivination-iosUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EyelidDivination-ios-EyelidDivination-iosUITests/Pods-EyelidDivination-ios-EyelidDivination-iosUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EyelidDivination-ios-EyelidDivination-iosUITests/Pods-EyelidDivination-ios-EyelidDivination-iosUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		94AE739EA95C1A8E27BA824D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EyelidDivination-ios-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04EED9E1277C08A000C312DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04EED9ED277C08A000C312DB /* ViewController.swift in Sources */,
+				04EED9E9277C08A000C312DB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04EED9F7277C08A400C312DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04EEDA00277C08A400C312DB /* EyelidDivination_iosTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04EEDA01277C08A400C312DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04EEDA0A277C08A400C312DB /* EyelidDivination_iosUITests.swift in Sources */,
+				04EEDA0C277C08A400C312DB /* EyelidDivination_iosUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		04EED9FD277C08A400C312DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04EED9E4277C08A000C312DB /* EyelidDivination-ios */;
+			targetProxy = 04EED9FC277C08A400C312DB /* PBXContainerItemProxy */;
+		};
+		04EEDA07277C08A400C312DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04EED9E4277C08A000C312DB /* EyelidDivination-ios */;
+			targetProxy = 04EEDA06277C08A400C312DB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		04EED9EE277C08A000C312DB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04EED9EF277C08A000C312DB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		04EED9F3277C08A400C312DB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04EED9F4277C08A400C312DB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		04EEDA0D277C08A400C312DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		04EEDA0E277C08A400C312DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04EEDA10277C08A400C312DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1E1B53BAA88383CF54FD3BA /* Pods-EyelidDivination-ios.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "EyelidDivination-ios/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jackpan.EyelidDivination-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		04EEDA11277C08A400C312DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AF1A4D1B3D5C4D41956DD65 /* Pods-EyelidDivination-ios.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "EyelidDivination-ios/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jackpan.EyelidDivination-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		04EEDA13277C08A400C312DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63159A68A0F73BC00198AA08 /* Pods-EyelidDivination-iosTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jackpan.EyelidDivination-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EyelidDivination-ios.app/EyelidDivination-ios";
+			};
+			name = Debug;
+		};
+		04EEDA14277C08A400C312DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A915D1B4621E2A20710F4D9A /* Pods-EyelidDivination-iosTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jackpan.EyelidDivination-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EyelidDivination-ios.app/EyelidDivination-ios";
+			};
+			name = Release;
+		};
+		04EEDA16277C08A400C312DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46D1DBE9E7F20EA856637401 /* Pods-EyelidDivination-ios-EyelidDivination-iosUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jackpan.EyelidDivination-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "EyelidDivination-ios";
+			};
+			name = Debug;
+		};
+		04EEDA17277C08A400C312DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86BED91F712D271E0A82DB53 /* Pods-EyelidDivination-ios-EyelidDivination-iosUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jackpan.EyelidDivination-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "EyelidDivination-ios";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04EED9E0277C08A000C312DB /* Build configuration list for PBXProject "EyelidDivination-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04EEDA0D277C08A400C312DB /* Debug */,
+				04EEDA0E277C08A400C312DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04EEDA0F277C08A400C312DB /* Build configuration list for PBXNativeTarget "EyelidDivination-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04EEDA10277C08A400C312DB /* Debug */,
+				04EEDA11277C08A400C312DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04EEDA12277C08A400C312DB /* Build configuration list for PBXNativeTarget "EyelidDivination-iosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04EEDA13277C08A400C312DB /* Debug */,
+				04EEDA14277C08A400C312DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04EEDA15277C08A400C312DB /* Build configuration list for PBXNativeTarget "EyelidDivination-iosUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04EEDA16277C08A400C312DB /* Debug */,
+				04EEDA17277C08A400C312DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04EED9DD277C08A000C312DB /* Project object */;
+}
