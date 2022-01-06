@@ -1,23 +1,19 @@
 //
-//  ViewController.swift
+//  MemberCenterViewController.swift
 //  EyelidDivination-ios
 //
-//  Created by mac on 2021/12/29.
+//  Created by mac on 2022/1/5.
 //
 
 import UIKit
-import RxSwift
-import RxCocoa
 
-class ViewController: UIViewController {
-
+class MemberCenterViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    
-    }
 
+        // Do any additional setup after loading the view.
+    }
+    
 
 }
-
