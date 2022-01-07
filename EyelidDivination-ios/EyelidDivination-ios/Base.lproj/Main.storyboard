@@ -16,9 +16,38 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="IYZ-35-apl">
+                                <rect key="frame" x="173.66666666666666" y="321.66666666666669" width="67" height="93"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="15m-p4-74N">
+                                        <rect key="frame" x="0.0" y="0.0" width="67" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1f5-n9-xxF">
+                                        <rect key="frame" x="0.0" y="31" width="67" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Xk-eh-5Oq">
+                                        <rect key="frame" x="0.0" y="62" width="67" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="IYZ-35-apl" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="KP4-em-QKC"/>
+                            <constraint firstItem="IYZ-35-apl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="krv-qp-wBI"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="memberButton" destination="1Xk-eh-5Oq" id="TXC-IF-zCc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -42,7 +71,7 @@
         <!--Login View Controller-->
         <scene sceneID="t6m-L6-u2Z">
             <objects>
-                <viewController id="8eo-St-Evg" customClass="LoginViewController" customModule="EyelidDivination_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="login" id="8eo-St-Evg" customClass="LoginViewController" customModule="EyelidDivination_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7GQ-dk-2XR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -129,6 +158,13 @@
                             <constraint firstItem="Slb-3n-xqw" firstAttribute="centerX" secondItem="7GQ-dk-2XR" secondAttribute="centerX" id="x1O-j5-6Cz"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="inputButton" destination="6C8-Vz-cdh" id="sTo-iA-OjB"/>
+                        <outlet property="userMailOutlet" destination="VIM-Yb-lVy" id="Nwg-Qo-IHf"/>
+                        <outlet property="userMailText" destination="leM-Cr-uFX" id="v4s-D9-Cxq"/>
+                        <outlet property="userPasswordOutlet" destination="h2T-2Y-a9p" id="W1g-Nc-E8b"/>
+                        <outlet property="userPasswordTet" destination="rGp-tK-7DE" id="KV8-cV-79j"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vxq-wp-Wpt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
