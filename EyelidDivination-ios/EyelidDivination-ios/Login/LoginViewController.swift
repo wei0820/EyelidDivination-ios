@@ -15,40 +15,44 @@ class LoginViewController: UIViewController {
 
     @IBOutlet weak var userMailText: UITextField!
     let disposeBag = DisposeBag()
-    
+    var subject = PublishSubject<String>()
+
     @IBOutlet weak var inputButton: UIButton!
     @IBOutlet weak var userPasswordTet: UITextField!
     @IBOutlet weak var userPasswordOutlet: UILabel!
-    
+    var loginModel = LoginModel()
+
     @IBOutlet weak var userMailOutlet: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         ititLayout()
-
+        
         // Do any additional setup after loading the view.
     }
     
     func ititLayout(){
         let userMailValid = userMailText.rx.text.orEmpty.map {  self.validateEmail(candidate: $0) == true}
             .share(replay: 1)
-    
         userMailValid.bind(to:userPasswordTet.rx.isEnabled).disposed(by: disposeBag)
         userMailValid.bind(to: userMailOutlet.rx.isHidden).disposed(by: disposeBag)
-        
+        loginModel.setUserMail(stringObservable: userMailText.rx.text.orEmpty.asObservable())
         let userPasswordValid = userPasswordTet.rx.text.orEmpty.map{ $0.count >= 12}.share(replay: 1)
         userPasswordValid.bind(to: userPasswordOutlet.rx.isHidden).disposed(by: disposeBag)
         
         let everythingVaild = Observable.combineLatest(userMailValid, userPasswordValid){$0 && $1}.share(replay: 1)
         everythingVaild.bind(to: inputButton.rx.isEnabled).disposed(by: disposeBag)
-//        inputButton.rx.tap.subscribe(onNext:{
-//
-//
-//        }).disposed(by: disposeBag)
+        inputButton.rx.tap.subscribe(onNext:{
+            print("jack", self.loginModel.userMail)
+
+
+
+        }).disposed(by: disposeBag)
+
+
         
+        userMailText.rx.text.orEmpty.bind(to: userMailOutlet.rx.text).disposed(by: disposeBag)
    
-        
-    
-    }
+        }
     func validateEmail(candidate: String) -> Bool
     
     {
@@ -99,6 +103,7 @@ class LoginViewController: UIViewController {
         Auth.auth().createUser(withEmail: mail, password: password) {result, error in
             
         }
+    
         
         
     }
