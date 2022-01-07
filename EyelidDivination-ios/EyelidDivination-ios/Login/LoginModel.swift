@@ -18,7 +18,8 @@ class LoginModel{
     
     func setUserMail(stringObservable: Observable<String>){
         stringObservable.subscribe(onNext: { string in
-          
+            self.userMail = string
+
         })
         .disposed(by: bag)
         
