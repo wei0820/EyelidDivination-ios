@@ -35,14 +35,16 @@ class LoginViewController: UIViewController {
             .share(replay: 1)
         userMailValid.bind(to:userPasswordTet.rx.isEnabled).disposed(by: disposeBag)
         userMailValid.bind(to: userMailOutlet.rx.isHidden).disposed(by: disposeBag)
-        loginModel.setUserMail(stringObservable: userMailText.rx.text.orEmpty.asObservable())
-        let userPasswordValid = userPasswordTet.rx.text.orEmpty.map{ $0.count >= 12}.share(replay: 1)
+        let userPasswordValid = userPasswordTet.rx.text.orEmpty.map{ $0.count >= 8}.share(replay: 1)
         userPasswordValid.bind(to: userPasswordOutlet.rx.isHidden).disposed(by: disposeBag)
         
         let everythingVaild = Observable.combineLatest(userMailValid, userPasswordValid){$0 && $1}.share(replay: 1)
         everythingVaild.bind(to: inputButton.rx.isEnabled).disposed(by: disposeBag)
-        
-        loginModel.setOnClick(onClickObservable: inputButton.rx.tap.asObservable())
+        loginModel.setUserMail(stringObservable: userMailText.rx.text.orEmpty.asObservable())
+
+        loginModel.setUserPassword(passwordObservable: userPasswordTet.rx.text.orEmpty.asObservable())
+
+        loginModel.setOnClick(onClickObservable: inputButton.rx.tap.asObservable(),view: self)
 
         
         userMailText.rx.text.orEmpty.bind(to: userMailOutlet.rx.text).disposed(by: disposeBag)
