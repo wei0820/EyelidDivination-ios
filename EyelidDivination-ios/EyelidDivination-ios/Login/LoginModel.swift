@@ -8,6 +8,8 @@
 import Foundation
 import RxSwift
 import RxCocoa
+import Firebase
+import FirebaseAuth
 
 class LoginModel{
 
@@ -33,7 +35,13 @@ class LoginModel{
         }).disposed(by: bag)
         
     }
-    
+    func setOnClick(onClickObservable: Observable<Void>){
+        onClickObservable.subscribe(onNext:{
+            
+            
+        }).disposed(by: bag)
+        
+    }
     
     //Mark
 //    let string = BehaviorSubject<String>(value: "")
@@ -54,7 +62,14 @@ class LoginModel{
 //        })
 //        .disposed(by: bag)
 //    }
+    func createAuth(mail:String ,password :String){
+        Auth.auth().createUser(withEmail: mail, password: password) {result, error in
+            
+        }
     
+        
+        
+    }
     
     
 }

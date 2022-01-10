@@ -8,8 +8,6 @@
 import UIKit
 import RxSwift
 import RxCocoa
-import Firebase
-import FirebaseAuth
 
 class LoginViewController: UIViewController {
 
@@ -31,6 +29,8 @@ class LoginViewController: UIViewController {
     }
     
     func ititLayout(){
+        
+        
         let userMailValid = userMailText.rx.text.orEmpty.map {  self.validateEmail(candidate: $0) == true}
             .share(replay: 1)
         userMailValid.bind(to:userPasswordTet.rx.isEnabled).disposed(by: disposeBag)
@@ -41,13 +41,8 @@ class LoginViewController: UIViewController {
         
         let everythingVaild = Observable.combineLatest(userMailValid, userPasswordValid){$0 && $1}.share(replay: 1)
         everythingVaild.bind(to: inputButton.rx.isEnabled).disposed(by: disposeBag)
-        inputButton.rx.tap.subscribe(onNext:{
-            print("jack", self.loginModel.userMail)
-
-
-
-        }).disposed(by: disposeBag)
-
+        
+        loginModel.setOnClick(onClickObservable: inputButton.rx.tap.asObservable())
 
         
         userMailText.rx.text.orEmpty.bind(to: userMailOutlet.rx.text).disposed(by: disposeBag)
@@ -65,29 +60,6 @@ class LoginViewController: UIViewController {
         
  
     }
-    //驗證手機號
-      func isPhoneNumber(phoneNumber:String) -> Bool {
-         let mobile = "^1([358][0-9]|4[579]|66|7[0135678]|9[89])[0-9]{8}$"
-         let regexMobile = NSPredicate(format: "SELF MATCHES %@",mobile)
-         if regexMobile.evaluate(with: phoneNumber) == true {
-             print("jack","true")
-             return true
-         }else
-         {             print("jack","false")
-
-             return false
-         }
-     }
-    
-    func checkCount(count : Int) -> Bool{
-        
-        if(count>=10){
-            return true
-        }
-        return false
-        
-        
-    }
     func showAlert() {
         let alertView = UIAlertView(
             title: "RxExample",
@@ -99,12 +71,5 @@ class LoginViewController: UIViewController {
         alertView.show()
     }
     
-    func createAuth(mail:String ,password :String){
-        Auth.auth().createUser(withEmail: mail, password: password) {result, error in
-            
-        }
-    
-        
-        
-    }
+
 }
