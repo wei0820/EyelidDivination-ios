@@ -44,7 +44,7 @@ class LoginViewController: UIViewController {
 
         loginModel.setUserPassword(passwordObservable: userPasswordTet.rx.text.orEmpty.asObservable())
 
-        loginModel.setOnClick(onClickObservable: inputButton.rx.tap.asObservable(),view: self)
+        loginModel.createUser(onClickObservable: inputButton.rx.tap.asObservable(),view: self)
 
         
         userMailText.rx.text.orEmpty.bind(to: userMailOutlet.rx.text).disposed(by: disposeBag)

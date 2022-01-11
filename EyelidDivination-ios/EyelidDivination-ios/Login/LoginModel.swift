@@ -10,6 +10,7 @@ import RxSwift
 import RxCocoa
 import Firebase
 import FirebaseAuth
+import RxSwiftExt
 
 class LoginModel{
 
@@ -35,7 +36,7 @@ class LoginModel{
         }).disposed(by: bag)
         
     }
-    func setOnClick(onClickObservable: Observable<Void>,view : UIViewController){
+    func createUser(onClickObservable: Observable<Void>,view : UIViewController){
         onClickObservable.subscribe(onNext:{
             
             Auth.auth().createUser(withEmail: self.userMail, password: self.userPassword) {result, error in
