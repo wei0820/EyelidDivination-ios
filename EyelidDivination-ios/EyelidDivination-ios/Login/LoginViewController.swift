@@ -48,8 +48,11 @@ class LoginViewController: UIViewController {
 
         
         userMailText.rx.text.orEmpty.bind(to: userMailOutlet.rx.text).disposed(by: disposeBag)
-   
+
+    
         }
+    
+    
     func validateEmail(candidate: String) -> Bool
     
     {

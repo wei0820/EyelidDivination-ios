@@ -41,11 +41,18 @@ class UserloginModel{
     
     
     
-    func setuserLogin(userlogin : Observable<Void>){
+    func setuserLogin(userlogin : Observable<Void>,view :UIViewController){
         userlogin.subscribe(onNext:{ [self] in
             Auth.auth().signIn(withEmail: self.email, password: self.password) { [weak self] authResult, error in
               guard let strongSelf = self else { return }
-                
+                if(authResult?.user != nil){
+                    view.dismiss(animated: true, completion: nil)
+
+                }else{
+                    print("UserloginModel","no")
+                    print("UserloginModel",error?.localizedDescription)
+
+                }
             }
             
             

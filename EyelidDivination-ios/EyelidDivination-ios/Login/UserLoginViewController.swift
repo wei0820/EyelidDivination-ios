@@ -36,9 +36,7 @@ class UserLoginViewController: BaseViewController {
         
         useLoginViewModel.setUserMail(userMail:userMailLoginTex.rx.text.orEmpty.asObservable())
         useLoginViewModel.setUserPassword(userPassword: userPasswordLoginTex.rx.text.orEmpty.asObservable())
-        
-        useLoginViewModel.setuserLogin(userlogin:userLoginButton.rx.tap.asObservable())
-    
+        useLoginViewModel.setuserLogin(userlogin: userLoginButton.rx.tap.asObservable(),view: self)
         createUserButton.rx.tap.subscribe(onNext:{
             self.setJump(type: "create")
         }).disposed(by: disposeBag)
