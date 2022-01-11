@@ -51,7 +51,14 @@ class UserloginModel{
                 }else{
                     print("UserloginModel","no")
                     print("UserloginModel",error?.localizedDescription)
+                    let alertView = UIAlertView(
+                        title: "error",
+                        message: error?.localizedDescription,
+                        delegate: nil,
+                        cancelButtonTitle: "OK"
+                    )
 
+                    alertView.show()
                 }
             }
             
