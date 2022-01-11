@@ -1,0 +1,6 @@
+framework module Pods_EyelidDivination_ios_EyelidDivination_iosUITests {
+  umbrella header "Pods-EyelidDivination-ios-EyelidDivination-iosUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

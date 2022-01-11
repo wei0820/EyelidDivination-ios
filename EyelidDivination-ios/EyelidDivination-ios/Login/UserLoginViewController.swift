@@ -36,9 +36,6 @@ class UserLoginViewController: UIViewController {
         
         useLoginViewModel.setuserLogin(userlogin:userLoginButton.rx.tap.asObservable())
         
-
-        
-        
         
     }
 

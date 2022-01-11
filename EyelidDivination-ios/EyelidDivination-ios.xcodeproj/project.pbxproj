@@ -23,6 +23,7 @@
 		04EEDA32278816FC00C312DB /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EEDA31278816FC00C312DB /* LoginModel.swift */; };
 		04EEDA34278BD74C00C312DB /* UserLoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EEDA33278BD74C00C312DB /* UserLoginModel.swift */; };
 		04EEDA36278BD7BA00C312DB /* UserLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EEDA35278BD7BA00C312DB /* UserLoginViewController.swift */; };
+		04EEDA38278D307000C312DB /* UserInfoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EEDA37278D307000C312DB /* UserInfoData.swift */; };
 		9DD41B247610973874372386 /* Pods_EyelidDivination_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AAC54E21DDE2A7F55022B75 /* Pods_EyelidDivination_ios.framework */; };
 		DF974CA69D1465D18913C51A /* Pods_EyelidDivination_ios_EyelidDivination_iosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 263C69982D88600E5211DE53 /* Pods_EyelidDivination_ios_EyelidDivination_iosUITests.framework */; };
 		F0D3A70035A82A115A8A1354 /* Pods_EyelidDivination_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B7947E376849BFD3D9F2200 /* Pods_EyelidDivination_iosTests.framework */; };
@@ -66,6 +67,7 @@
 		04EEDA31278816FC00C312DB /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		04EEDA33278BD74C00C312DB /* UserLoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLoginModel.swift; sourceTree = "<group>"; };
 		04EEDA35278BD7BA00C312DB /* UserLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLoginViewController.swift; sourceTree = "<group>"; };
+		04EEDA37278D307000C312DB /* UserInfoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoData.swift; sourceTree = "<group>"; };
 		263C69982D88600E5211DE53 /* Pods_EyelidDivination_ios_EyelidDivination_iosUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EyelidDivination_ios_EyelidDivination_iosUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AF1A4D1B3D5C4D41956DD65 /* Pods-EyelidDivination-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EyelidDivination-ios.release.xcconfig"; path = "Target Support Files/Pods-EyelidDivination-ios/Pods-EyelidDivination-ios.release.xcconfig"; sourceTree = "<group>"; };
 		46D1DBE9E7F20EA856637401 /* Pods-EyelidDivination-ios-EyelidDivination-iosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EyelidDivination-ios-EyelidDivination-iosUITests.debug.xcconfig"; path = "Target Support Files/Pods-EyelidDivination-ios-EyelidDivination-iosUITests/Pods-EyelidDivination-ios-EyelidDivination-iosUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 				04EEDA31278816FC00C312DB /* LoginModel.swift */,
 				04EEDA33278BD74C00C312DB /* UserLoginModel.swift */,
 				04EEDA35278BD7BA00C312DB /* UserLoginViewController.swift */,
+				04EEDA37278D307000C312DB /* UserInfoData.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -441,6 +444,7 @@
 				04EEDA32278816FC00C312DB /* LoginModel.swift in Sources */,
 				04EEDA2D2785A6B900C312DB /* LoginViewController.swift in Sources */,
 				04EED9ED277C08A000C312DB /* ViewController.swift in Sources */,
+				04EEDA38278D307000C312DB /* UserInfoData.swift in Sources */,
 				04EEDA2B2785A64000C312DB /* MemberCenterViewController.swift in Sources */,
 				04EEDA34278BD74C00C312DB /* UserLoginModel.swift in Sources */,
 				04EED9E9277C08A000C312DB /* AppDelegate.swift in Sources */,

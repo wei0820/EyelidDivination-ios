@@ -16,8 +16,8 @@ class UserloginModel{
     let disposeBag = DisposeBag()
     var email : String = ""
     var password : String = ""
-    var userId  : BehaviorSubject<String> = BehaviorSubject(value: "")
-    
+    var userInfoDataBehaviorRelay  : BehaviorRelay<UserInfoData>!
+    var userInfonData :  UserInfoData!
     func setUserMail(userMail : Observable<String>){
         
         userMail.subscribe(onNext:{
@@ -42,12 +42,11 @@ class UserloginModel{
     
     
     func setuserLogin(userlogin : Observable<Void>){
-        userlogin.subscribe(onNext:{
+        userlogin.subscribe(onNext:{ [self] in
             Auth.auth().signIn(withEmail: self.email, password: self.password) { [weak self] authResult, error in
               guard let strongSelf = self else { return }
                 
             }
-
             
             
         }).disposed(by: disposeBag)
@@ -60,7 +59,9 @@ class UserloginModel{
         let user = Auth.auth().currentUser
         
         if let user = user {
+            userInfonData  = UserInfoData(uid: user.uid, email: user.email!, photoURL: user.photoURL!,displayName: user.displayName!)
             
+            userInfoDataBehaviorRelay.accept(userInfonData)
         }
     }
     
