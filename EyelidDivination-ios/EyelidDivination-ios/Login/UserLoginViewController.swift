@@ -8,15 +8,18 @@
 import UIKit
 import RxSwift
 import RxCocoa
-class UserLoginViewController: UIViewController {
+class UserLoginViewController: BaseViewController {
     @IBOutlet weak var userMailLoginTex: UITextField!
     @IBOutlet weak var userPasswordLoginTex: UITextField!
     let disposeBag = DisposeBag()
     let useLoginViewModel = UserloginModel()
-
+    @IBOutlet weak var createUserButton: UIButton!
+    
     @IBOutlet weak var userLoginButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        initLayout()
+    
 
     }
     
@@ -35,7 +38,10 @@ class UserLoginViewController: UIViewController {
         useLoginViewModel.setUserPassword(userPassword: userPasswordLoginTex.rx.text.orEmpty.asObservable())
         
         useLoginViewModel.setuserLogin(userlogin:userLoginButton.rx.tap.asObservable())
-        
+    
+        createUserButton.rx.tap.subscribe(onNext:{
+            self.setJump(type: "create")
+        }).disposed(by: disposeBag)
         
     }
 
