@@ -18,7 +18,7 @@ class ViewController: BaseViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         memberButton.rx.tap.subscribe(onNext:{
-            self.setJump(type:"login")
+            self.setJump(type:"member")
             
         }).disposed(by: disposeBag)
         

@@ -8,7 +8,7 @@
 import UIKit
 import RxSwift
 import RxCocoa
-
+import RxGesture
 class LoginViewController: UIViewController {
 
     @IBOutlet weak var userMailText: UITextField!
@@ -24,7 +24,7 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         ititLayout()
-        
+    
         // Do any additional setup after loading the view.
     }
     
@@ -49,6 +49,8 @@ class LoginViewController: UIViewController {
         
         userMailText.rx.text.orEmpty.bind(to: userMailOutlet.rx.text).disposed(by: disposeBag)
 
+        
+        
     
         }
     
@@ -74,7 +76,13 @@ class LoginViewController: UIViewController {
         )
 
         alertView.show()
+        
     }
+    
+    
+    
+
+    
     
 
 }

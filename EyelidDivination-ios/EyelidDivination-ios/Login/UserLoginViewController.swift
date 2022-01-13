@@ -8,19 +8,30 @@
 import UIKit
 import RxSwift
 import RxCocoa
+import RxSwiftExt
 class UserLoginViewController: BaseViewController {
     @IBOutlet weak var userMailLoginTex: UITextField!
     @IBOutlet weak var userPasswordLoginTex: UITextField!
     let disposeBag = DisposeBag()
     let useLoginViewModel = UserloginModel()
+    let userInfoData = UserInfoData()
     @IBOutlet weak var createUserButton: UIButton!
     
+    
+    
+    var useLoginView : UserloginModel?{
+        didSet{
+            guard let useLoginView = useLoginView else{
+                return
+            }
+        }
+    }
     @IBOutlet weak var userLoginButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         initLayout()
-    
-
+        
+        
     }
     
     

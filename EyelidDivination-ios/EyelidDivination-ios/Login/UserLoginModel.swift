@@ -12,7 +12,6 @@ import Firebase
 import FirebaseAuth
 
 class UserloginModel{
-    
     let disposeBag = DisposeBag()
     var email : String = ""
     var password : String = ""
@@ -49,16 +48,12 @@ class UserloginModel{
                     view.dismiss(animated: true, completion: nil)
 
                 }else{
-                    print("UserloginModel","no")
-                    print("UserloginModel",error?.localizedDescription)
-                    let alertView = UIAlertView(
+                  UIAlertView(
                         title: "error",
                         message: error?.localizedDescription,
                         delegate: nil,
                         cancelButtonTitle: "OK"
-                    )
-
-                    alertView.show()
+                  ).show()
                 }
             }
             
@@ -73,9 +68,7 @@ class UserloginModel{
         let user = Auth.auth().currentUser
         
         if let user = user {
-            userInfonData  = UserInfoData(uid: user.uid, email: user.email!, photoURL: user.photoURL!,displayName: user.displayName!)
-            
-            userInfoDataBehaviorRelay.accept(userInfonData)
+  
         }
     }
     

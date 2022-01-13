@@ -56,7 +56,7 @@
         <!--Member Center View Controller-->
         <scene sceneID="cnC-jN-OkY">
             <objects>
-                <viewController id="sRg-Ex-OJV" customClass="MemberCenterViewController" customModule="EyelidDivination_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="member" id="sRg-Ex-OJV" customClass="MemberCenterViewController" customModule="EyelidDivination_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="o6T-mo-a5r">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -133,6 +133,9 @@
                             <constraint firstItem="FYJ-me-xnn" firstAttribute="top" secondItem="baP-Ia-gVM" secondAttribute="top" constant="12" id="m8x-dW-DWS"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="userImage" destination="FYJ-me-xnn" id="cZQ-YB-I7Q"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zhL-hG-4Ex" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

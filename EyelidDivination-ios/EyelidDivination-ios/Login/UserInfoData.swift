@@ -6,19 +6,16 @@
 //
 
 import Foundation
-
+import RxSwift
+import RxCocoa
 class UserInfoData{
-    var  uid : String = ""
-    var email :String = ""
-    var photoURL : URL!
-    var displayName : String = ""
+    
+    
+    var uid : BehaviorRelay<String?> = BehaviorRelay(value: String())
+    var email : BehaviorRelay<String?> = BehaviorRelay(value: String())
+    var displayName : BehaviorRelay<String?> = BehaviorRelay(value: String())
     typealias isLogin = Bool
-    init(uid: String,email : String ,photoURL : URL,displayName:String){
-        self.uid = uid
-        self.email = email
-        self.photoURL = photoURL
-        self.displayName = displayName
-    }
+
     
     
     
