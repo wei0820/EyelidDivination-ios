@@ -8,40 +8,85 @@
 import UIKit
 import RxSwift
 import RxRelay
+import RxGesture
+import FirebaseAuth
 
 class MemberCenterViewController: BaseViewController {
-    let imageURL = "https://bpic.588ku.com/element_origin_min_pic/19/10/09/b5059f4cae87b9acbceb7c3906cd69cc.jpg"
+
+
     @IBOutlet weak var userImage: UIImageView!
-    let imgge : BehaviorRelay<UIImage?> = BehaviorRelay(value: UIImage())
-    
-    let eee : Variable<String?> = Variable(String())
     let disposeBag = DisposeBag()
+    let userInfoData = UserInfoData()
+
+    @IBOutlet weak var changeNameBtn: UIButton!
+    @IBOutlet weak var useruuidLabel: UILabel!
+    @IBOutlet weak var userMail: UILabel!
+    @IBOutlet weak var changeUserMailBtn: UIButton!
+    
+    
+//    var user  : UserInfoData?{
+//        didSet{
+//            guard let user = user else {
+//                return
+//            }
+//            print("MemberCenterViewController","in")
+//            user.uid.asObservable().bind(to: useruuidLabel.rx.text).disposed(by: disposeBag)
+//
+//        }
+//    }
+//
     override func viewDidLoad() {
      setData()
-        
-        
-        
+    initLayout()
+
     }
     
+    
+    func initLayout(){
+        changeUserMailBtn.rx.tap.subscribe(onNext:{
+            
+            
+            let newuser = Auth.auth().currentUser
+            let credential = EmailAuthProvider.credential(withEmail: (newuser?.email)!, password: "12345678")
+
+            newuser?.reauthenticate(with: credential, completion: { result, error in
+                if let error = error {
+                  // An error happened.
+                } else {
+                    Auth.auth().currentUser?.updateEmail(to: "123987666@gmail.com") { error in
+                        
+                        self.userInfoData.email.accept(newuser?.email)
+                    }
+                    
+                }
+            })
+            
+            
+            
+            
+       
+            
+        }).disposed(by: disposeBag)
+
+    }
     
     func setData(){
-        let url = URL(string:imageURL)!
-        let task = URLSession.shared.dataTask(with: url) { data, response, error in
-            
-           if let data = data,
-              let image = UIImage(data: data) {
-              DispatchQueue.main.async {
-                  self.imgge.accept(image)
-              }
-           }
-        }
-        task.resume()
+        userInfoData.getUserInfoData()
+        userInfoData.imgge.asObservable().bind(to: userImage.rx.image).disposed(by:disposeBag)
+        userInfoData.uid.asObservable().bind(to: useruuidLabel.rx.text).disposed(by: disposeBag)
+        userInfoData.email.bind(to: userMail.rx.text).disposed(by: disposeBag)
+
         
-        
-        imgge.asObservable().bind(to: userImage.rx.image).disposed(by:disposeBag)
-    
     }
     
+    
+    
+    
+    @objc func setJumpViewController(){
+          
+    
+          
+      }
 
     
     

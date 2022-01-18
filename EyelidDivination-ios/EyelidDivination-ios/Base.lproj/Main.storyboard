@@ -56,7 +56,7 @@
         <!--Member Center View Controller-->
         <scene sceneID="cnC-jN-OkY">
             <objects>
-                <viewController storyboardIdentifier="member" id="sRg-Ex-OJV" customClass="MemberCenterViewController" customModule="EyelidDivination_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="member" modalPresentationStyle="fullScreen" id="sRg-Ex-OJV" customClass="MemberCenterViewController" customModule="EyelidDivination_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="o6T-mo-a5r">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -69,42 +69,37 @@
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="41" translatesAutoresizingMaskIntoConstraints="NO" id="4D9-yC-adw">
-                                <rect key="frame" x="12" y="280.66666666666669" width="390" height="175"/>
+                                <rect key="frame" x="12" y="286" width="390" height="164.33333333333337"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1En-Ic-B82">
-                                        <rect key="frame" x="0.0" y="0.0" width="390" height="31"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="20.333333333333332"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="UUID:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6hr-dV-pGm">
-                                                <rect key="frame" x="0.0" y="0.0" width="323" height="31"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="390" height="20.333333333333332"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EEk-5a-PHj">
-                                                <rect key="frame" x="323" y="0.0" width="67" height="31"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                                            </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZgP-vK-QMU">
-                                        <rect key="frame" x="0.0" y="72" width="390" height="31"/>
+                                        <rect key="frame" x="0.0" y="61.333333333333314" width="390" height="31"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="mail:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="roG-7F-iw7">
-                                                <rect key="frame" x="0.0" y="0.0" width="323" height="31"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="308.66666666666669" height="31"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FQv-MH-acQ">
-                                                <rect key="frame" x="323" y="0.0" width="67" height="31"/>
+                                                <rect key="frame" x="308.66666666666669" y="0.0" width="81.333333333333314" height="31"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="更改信箱"/>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8LD-G8-SbV">
-                                        <rect key="frame" x="0.0" y="144" width="390" height="31"/>
+                                        <rect key="frame" x="0.0" y="133.33333333333331" width="390" height="31"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PaA-1I-R1I">
                                                 <rect key="frame" x="0.0" y="0.0" width="323" height="31"/>
@@ -133,13 +128,18 @@
                             <constraint firstItem="FYJ-me-xnn" firstAttribute="top" secondItem="baP-Ia-gVM" secondAttribute="top" constant="12" id="m8x-dW-DWS"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="8Wj-cf-ut8"/>
                     <connections>
+                        <outlet property="changeNameBtn" destination="hXd-gL-2BN" id="rm0-d6-jNd"/>
+                        <outlet property="changeUserMailBtn" destination="FQv-MH-acQ" id="q5P-i6-mnw"/>
                         <outlet property="userImage" destination="FYJ-me-xnn" id="cZQ-YB-I7Q"/>
+                        <outlet property="userMail" destination="roG-7F-iw7" id="rZG-gh-OCq"/>
+                        <outlet property="useruuidLabel" destination="6hr-dV-pGm" id="Tpw-aP-RVI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zhL-hG-4Ex" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="751" y="32"/>
+            <point key="canvasLocation" x="1657.9710144927537" y="31.793478260869566"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="t6m-L6-u2Z">
@@ -241,7 +241,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vxq-wp-Wpt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1694" y="-40"/>
+            <point key="canvasLocation" x="2600" y="-40.760869565217398"/>
         </scene>
         <!--User Login View Controller-->
         <scene sceneID="DYp-pa-lSb">
@@ -340,7 +340,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nEU-NV-zRD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1694" y="-40"/>
+            <point key="canvasLocation" x="2600" y="-40.760869565217398"/>
         </scene>
     </scenes>
     <resources>

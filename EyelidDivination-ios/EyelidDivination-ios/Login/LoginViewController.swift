@@ -19,7 +19,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var userPasswordTet: UITextField!
     @IBOutlet weak var userPasswordOutlet: UILabel!
     var loginModel = LoginModel()
-
+    
     @IBOutlet weak var userMailOutlet: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +29,6 @@ class LoginViewController: UIViewController {
     }
     
     func ititLayout(){
-        
         
         let userMailValid = userMailText.rx.text.orEmpty.map {  self.validateEmail(candidate: $0) == true}
             .share(replay: 1)

@@ -6,9 +6,14 @@
 //
 
 import UIKit
+import FirebaseAuth
+import RxCocoa
+import RxSwift
+
 
 class BaseViewController: UIViewController {
-
+   
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -19,19 +24,14 @@ class BaseViewController: UIViewController {
             
                  // Fallback on earlier versions
              }
-        // Do any additional setup after loading the view.
+        
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    
+    
+    
+    
     
     func setJump(type:String){
           

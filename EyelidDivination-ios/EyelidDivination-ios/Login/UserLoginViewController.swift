@@ -14,7 +14,6 @@ class UserLoginViewController: BaseViewController {
     @IBOutlet weak var userPasswordLoginTex: UITextField!
     let disposeBag = DisposeBag()
     let useLoginViewModel = UserloginModel()
-    let userInfoData = UserInfoData()
     @IBOutlet weak var createUserButton: UIButton!
     
     
@@ -30,7 +29,6 @@ class UserLoginViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         initLayout()
-        
         
     }
     
@@ -52,6 +50,7 @@ class UserLoginViewController: BaseViewController {
             self.setJump(type: "create")
         }).disposed(by: disposeBag)
         
+                
     }
 
     /*

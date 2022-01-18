@@ -8,12 +8,12 @@
 import UIKit
 import RxSwift
 import RxCocoa
-
+import FirebaseAuth
 class ViewController: BaseViewController {
 
     @IBOutlet weak var memberButton: UIButton!
     let disposeBag = DisposeBag()
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -23,6 +23,10 @@ class ViewController: BaseViewController {
         }).disposed(by: disposeBag)
         
     
+     }
+        
+        
+        
     }
 
     
@@ -30,5 +34,5 @@ class ViewController: BaseViewController {
     
          
 
-}
+
 
