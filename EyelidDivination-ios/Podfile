@@ -18,6 +18,9 @@ target 'EyelidDivination-ios' do
   end
   pod 'Firebase'
 pod 'Firebase/Auth'
+pod 'Firebase/Storage'
+pod 'Firebase/Database'
+
  pod 'RxSwift', '~> 5'
  pod 'RxCocoa', '~> 5'
 pod 'RxSwiftExt', '~> 5'

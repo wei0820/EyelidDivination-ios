@@ -53,7 +53,7 @@ class MemberCenterViewController: BaseViewController {
                 if let error = error {
                   // An error happened.
                 } else {
-                    Auth.auth().currentUser?.updateEmail(to: "123987666@gmail.com") { error in
+                    Auth.auth().currentUser?.updateEmail(to: "5555555@gmail.com") { error in
                         
                         self.userInfoData.email.accept(newuser?.email)
                     }
@@ -64,10 +64,38 @@ class MemberCenterViewController: BaseViewController {
             
             
             
+            
        
             
         }).disposed(by: disposeBag)
 
+        
+        
+        let click = UITapGestureRecognizer()
+       click.rx.event.asObservable().subscribe(onNext: { recognizer in
+           print("MemberCenterViewController","点击")
+           let newuser = Auth.auth().currentUser
+           let credential = EmailAuthProvider.credential(withEmail: (newuser?.email)!, password: "12345678")
+           let changeRequest = Auth.auth().currentUser?.createProfileChangeRequest()
+           changeRequest?.photoURL = URL(fileURLWithPath: "https://doqvf81n9htmm.cloudfront.net/data/crop_article/87683/shutterstock_252511228.jpg_1140x855.jpg")
+
+           changeRequest?.commitChanges { error in
+               print("MemberCenterViewController",error?.localizedDescription)
+               let newuser = Auth.auth().currentUser
+//                userInfoData.imgge.accept(newuser?.photoURL)
+             // ...
+           }
+           
+           
+           
+       }).disposed(by: disposeBag)
+        
+        userImage.addGestureRecognizer(click)
+        userImage.isUserInteractionEnabled = true
+        
+    
+
+        
     }
     
     func setData(){
