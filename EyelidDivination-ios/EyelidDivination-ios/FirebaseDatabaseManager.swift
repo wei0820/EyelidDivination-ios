@@ -11,30 +11,22 @@ import FirebaseDatabase
 
 class FirebaseDatabaseManager{
     
-    
-    static func addData(id : String , name :String ,address :String , lat :Double,lon :Double,like : Int ,unlike:Int ,usermessage :String,
-                            url_1 : String, url_2 : String ,url_3 : String ,type : Int,phone : String){
-            let reference: DatabaseReference! = Database.database().reference().child("SharePet").child("SharePet")
+   static  let imageURL = "https://bpic.588ku.com/element_origin_min_pic/19/10/09/b5059f4cae87b9acbceb7c3906cd69cc.jpg"
+
+    static func addUserData(id : String , name :String ,mail :String,
+                            userUrl : String,phone : String){
+            let reference: DatabaseReference! = Database.database().reference().child("UserData")
                 let childRef = reference.childByAutoId() // 隨機生成的節點唯一識別碼，用來當儲存時的key值
-                let dateReviewReference = reference.child(childRef.key!)
+                let dateReviewReference = reference.child(id)
                 // 新增節點資料
                 var dateReview: [String : AnyObject] = [String : AnyObject]()
             
                 dateReview["id"] = id as AnyObject
                 dateReview["name"] = name as AnyObject
-                dateReview["address"] = address as AnyObject
-                dateReview["lat"] = lat as AnyObject
-                dateReview["lon"] = lon as AnyObject
+                dateReview["mail"] = mail as AnyObject
                 dateReview["uuid"] = getUUID() as AnyObject
-                dateReview["date"]  = DateManager.setDate() as AnyObject
-                dateReview["like"]  = like as AnyObject
-                dateReview["unlike"]  = unlike as AnyObject
-                dateReview["usermessage"]  = usermessage as AnyObject
                 dateReview["key"]  = childRef.key as AnyObject
-                dateReview["url_1"] = url_1 as AnyObject
-                dateReview["url_2"] = url_2 as AnyObject
-                dateReview["url_3"] = url_3 as AnyObject
-                dateReview["type"] = type as AnyObject
+                dateReview["userUrl"] = userUrl as AnyObject
                 dateReview["phone"] = phone as AnyObject
 
             dateReviewReference.updateChildValues(dateReview) { (err, ref) in
@@ -50,24 +42,60 @@ class FirebaseDatabaseManager{
 
         }
         
-        static func  getDataForLabel(){
-            let reference: DatabaseReference! = Database.database().reference().child("SharePlace").child("SharePlace")
-                       
-                       reference.queryOrderedByKey().observe(.value, with: { snapshot in
-                           if snapshot.childrenCount > 0 {
-                               
-                               for item in snapshot.children {
-              
+    
+    static  func checkMemberDate(){
+          
+        
+        if Auth.auth().currentUser != nil {
+            let user = Auth.auth().currentUser
 
-                               }
-                               
-                               
-                           }
-                           
-                       })
+
+            // 查詢節點資料
+            Database.database().reference().child("UserData").child(user?.uid as! String).observe(.value) { snapshot in
+                if let output = snapshot.value as? [String: Any] {
+                    print("FirebaseDatabaseManager","目前資料庫內有 \(output.count) 筆")
+                } else {
+                    print("FirebaseDatabaseManager","目前資料庫內沒有留言！")
+                    
+                    if Auth.auth().currentUser != nil {
+                      // User is signed in.
+                        let user = Auth.auth().currentUser
+                        let userId =  user?.uid != nil ? user?.uid : ""
+                        let usermail =  user?.email != nil ? user?.email : ""
+                        let username =  user?.email != nil ? user?.email : ""
+                        let userphone =  user?.phoneNumber != nil ? user?.phoneNumber : ""
+                        let userphotourl =  user?.photoURL != nil ? user?.photoURL?.absoluteString : imageURL
+                        
+                        
+                        self.addUserData(id: userId!, name: username!, mail: usermail!, userUrl: userphotourl!, phone: userphone!)
+                        
+                        
+                        
+                        
+          
+                    }
+                    
+                    
+                }
+            }
+            
         }
+
+          
+          
+      }
+    
+    static func updateMemberData(){
         
+  
+
         
+    }
+    
+    
+    
+    
+    
         static func getUUID() -> String{
             return UIDevice.current.identifierForVendor?.uuidString ?? UUID().uuidString
         }

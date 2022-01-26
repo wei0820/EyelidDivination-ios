@@ -22,10 +22,10 @@ class ViewController: BaseViewController {
             
         }).disposed(by: disposeBag)
         
-    
+        FirebaseDatabaseManager.checkMemberDate()
      }
         
-        
+
         
     }
 
