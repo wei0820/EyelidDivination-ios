@@ -85,8 +85,6 @@ class UserInfoData{
             
         
         }else{
-            print("jack","nodata")
-            
             
             UIManager.stringToUImage(string: imageURL, imageBehaviorRelay: self.imgge)
         }
