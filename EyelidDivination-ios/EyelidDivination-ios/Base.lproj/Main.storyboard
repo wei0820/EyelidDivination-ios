@@ -47,7 +47,7 @@
                     </view>
                     <connections>
                         <outlet property="memberButton" destination="1Xk-eh-5Oq" id="TXC-IF-zCc"/>
-                        <outlet property="quictButton" destination="1Xk-eh-5Oq" id="rsg-Gy-lkl"/>
+                        <outlet property="quictButton" destination="1f5-n9-xxF" id="zVP-VN-SDK"/>
                         <outlet property="selectButton" destination="15m-p4-74N" id="8mx-Nt-jT3"/>
                     </connections>
                 </viewController>
@@ -73,7 +73,7 @@
         <!--Quict View Controller-->
         <scene sceneID="wqT-FP-bXD">
             <objects>
-                <viewController storyboardIdentifier="quict" id="vHe-Xp-05n" customClass="QuictViewController" customModule="EyelidDivination_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="quictview" id="vHe-Xp-05n" customClass="QuictViewController" customModule="EyelidDivination_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eGX-Of-P1i">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

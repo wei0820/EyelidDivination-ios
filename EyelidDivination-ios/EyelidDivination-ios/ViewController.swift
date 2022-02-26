@@ -38,8 +38,10 @@ class ViewController: BaseViewController {
             
         }).disposed(by: disposeBag)
         
+        
+        
         quictButton.rx.tap.subscribe(onNext:{
-            self.setJump(type:"quict")
+            self.setJump(type:"quictview")
 
             
         }).disposed(by: disposeBag)
