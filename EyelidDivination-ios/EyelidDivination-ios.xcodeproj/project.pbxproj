@@ -29,6 +29,7 @@
 		04EEDA3E279AB2F900C312DB /* UIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EEDA3D279AB2F900C312DB /* UIManager.swift */; };
 		9DD41B247610973874372386 /* Pods_EyelidDivination_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AAC54E21DDE2A7F55022B75 /* Pods_EyelidDivination_ios.framework */; };
 		B76F3AD627CA0C8A004718BB /* SlectEyesOrSexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76F3AD527CA0C8A004718BB /* SlectEyesOrSexViewController.swift */; };
+		B76F3AD927CA0CE8004718BB /* QuictViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76F3AD827CA0CE8004718BB /* QuictViewController.swift */; };
 		DF974CA69D1465D18913C51A /* Pods_EyelidDivination_ios_EyelidDivination_iosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 263C69982D88600E5211DE53 /* Pods_EyelidDivination_ios_EyelidDivination_iosUITests.framework */; };
 		F0D3A70035A82A115A8A1354 /* Pods_EyelidDivination_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B7947E376849BFD3D9F2200 /* Pods_EyelidDivination_iosTests.framework */; };
 /* End PBXBuildFile section */
@@ -84,6 +85,7 @@
 		8AAC54E21DDE2A7F55022B75 /* Pods_EyelidDivination_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EyelidDivination_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A915D1B4621E2A20710F4D9A /* Pods-EyelidDivination-iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EyelidDivination-iosTests.release.xcconfig"; path = "Target Support Files/Pods-EyelidDivination-iosTests/Pods-EyelidDivination-iosTests.release.xcconfig"; sourceTree = "<group>"; };
 		B76F3AD527CA0C8A004718BB /* SlectEyesOrSexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlectEyesOrSexViewController.swift; sourceTree = "<group>"; };
+		B76F3AD827CA0CE8004718BB /* QuictViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuictViewController.swift; sourceTree = "<group>"; };
 		D1E1B53BAA88383CF54FD3BA /* Pods-EyelidDivination-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EyelidDivination-ios.debug.xcconfig"; path = "Target Support Files/Pods-EyelidDivination-ios/Pods-EyelidDivination-ios.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -141,6 +143,7 @@
 		04EED9E7277C08A000C312DB /* EyelidDivination-ios */ = {
 			isa = PBXGroup;
 			children = (
+				B76F3AD727CA0CD4004718BB /* Quict */,
 				B76F3AD427CA0C3C004718BB /* Select */,
 				04EEDA30278816C300C312DB /* Login */,
 				04EED9E8277C08A000C312DB /* AppDelegate.swift */,
@@ -194,6 +197,14 @@
 				B76F3AD527CA0C8A004718BB /* SlectEyesOrSexViewController.swift */,
 			);
 			path = Select;
+			sourceTree = "<group>";
+		};
+		B76F3AD727CA0CD4004718BB /* Quict */ = {
+			isa = PBXGroup;
+			children = (
+				B76F3AD827CA0CE8004718BB /* QuictViewController.swift */,
+			);
+			path = Quict;
 			sourceTree = "<group>";
 		};
 		C4489CC9B5C0B9F70D53668B /* Pods */ = {
@@ -463,6 +474,7 @@
 				04EEDA2F2786EF3400C312DB /* BaseViewController.swift in Sources */,
 				04EEDA32278816FC00C312DB /* LoginModel.swift in Sources */,
 				04EEDA2D2785A6B900C312DB /* LoginViewController.swift in Sources */,
+				B76F3AD927CA0CE8004718BB /* QuictViewController.swift in Sources */,
 				04EED9ED277C08A000C312DB /* ViewController.swift in Sources */,
 				04EEDA38278D307000C312DB /* UserInfoData.swift in Sources */,
 				04EEDA2B2785A64000C312DB /* MemberCenterViewController.swift in Sources */,
